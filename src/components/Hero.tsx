@@ -1,4 +1,3 @@
-import { SparklesCore } from "../aceternity-ui/Sparkles";
 import { TypewriterEffectSmooth } from "../aceternity-ui/TypewriterEffect";
 import Section from "./Section";
 
