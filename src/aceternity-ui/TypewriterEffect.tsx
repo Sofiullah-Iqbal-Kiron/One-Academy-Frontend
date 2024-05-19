@@ -5,18 +5,12 @@ import { motion } from "framer-motion";
 // local
 import { cn } from "../utils";
 
-export const TypewriterEffectSmooth = ({
-    words,
-    className,
-    cursorClassName,
-}: {
-    words: {
-        text: string;
-        className?: string;
-    }[];
-    className?: string;
-    cursorClassName?: string;
-}) => {
+
+// interface TypeWriterProps{
+    
+// }
+
+export const TypewriterEffectSmooth = ({ words, className, cursorClassName, }: { words: { text: string; className?: string; }[]; className?: string; cursorClassName?: string; }) => {
     // split text inside of words into array of characters
     const wordsArray = words.map((word) => {
         return {
