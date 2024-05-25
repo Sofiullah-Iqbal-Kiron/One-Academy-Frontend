@@ -1,4 +1,5 @@
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette")
+const {nextui} = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
 
@@ -8,13 +9,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 
-  darkMode: "class",
-
   theme: {
     extend: {},
   },
 
-  plugins: [addVariablesForColors],
+  darkMode: "class",
+
+  plugins: [addVariablesForColors, nextui()],
 }
 
 function addVariablesForColors({ addBase, theme }) {
